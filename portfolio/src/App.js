@@ -1,15 +1,18 @@
 import Navbar from './Components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './Styles/Navbar.css';
+import './Styles/Footer.css';
 import './Styles/About.css';
 import About from './Pages/About';
 import './App.css';
+import Footer from './Components/Footer';
 
 
 function App() {
   return (
     <Router>
       <Navbar />
+       
       <Routes>
         <Route
           path="/"
@@ -25,6 +28,7 @@ function App() {
         />
         <Route path="/about" element={<About />} />
       </Routes>
+     <Footer />
     </Router>
   );
 }
