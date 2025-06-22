@@ -1,22 +1,53 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .home-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 70vh; /* Makes the section centered vertically */
+  min-height: 85vh;
   padding: 2rem;
   text-align: center;
+  background: linear-gradient(135deg, #e0e7ff, #f0fdf4); /* Soft background */
 }
 
 .name-heading {
-  font-size: 2.5rem;
+  display: flex;
+  gap: 12px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1f2937;
   margin-bottom: 1rem;
-  color: #111;
+}
+
+.word {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.word:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.word:nth-child(2) {
+  animation-delay: 0.9s;
 }
 
 .intro-paragraph {
   max-width: 700px;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   line-height: 1.6;
-  color: #444;
+  color: #374151;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+  animation-delay: 1.5s;
 }

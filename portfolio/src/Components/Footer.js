@@ -5,8 +5,8 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-section intro">
-        <h2>Portfolio<span className="dot">.</span></h2>
-        <p>Crafting exceptional digital experiences with modern technologies and innovative design.</p>
+        <h2>Portfolio</h2>
+        <p className='para'>Crafting exceptional digital experiences with modern technologies and innovative design.</p>
       </div>
 
       <div className="footer-section">
